@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MERIDIAN — 精准时光</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">MERIDIAN</a>
+    <nav class="nav">
+      <a href="#collection">系列</a>
+      <a href="#craft">工艺</a>
+      <a href="#contact">预约</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=2000&q=80"
+          alt=""
+          class="hero-img"
+        />
+        <div class="hero-veil"></div>
+      </div>
+      <div class="hero-copy">
+        <p class="brand">MERIDIAN</p>
+        <h1>为每一次抵达，校准时间</h1>
+        <p class="lede">瑞士机芯，中国设计。每一枚腕表，都是可佩戴的精密建筑。</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#collection">浏览系列</a>
+          <a class="btn btn-ghost" href="#contact">预约试戴</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="craft" id="craft">
+      <div class="craft-text">
+        <h2>时间值得被认真对待</h2>
+        <p>我们只做三件事：选材、调校、打磨。从蓝宝石镜面到自动上链表芯，每一道工序都服务于手腕上的日常精准。</p>
+      </div>
+      <figure class="craft-visual">
+        <img
+          src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&q=80"
+          alt="腕表细节特写"
+        />
+      </figure>
+    </section>
+
+    <section class="collection" id="collection">
+      <div class="section-head">
+        <h2>本季系列</h2>
+        <p>三款经典，覆盖日常、正式与运动场景。</p>
+      </div>
+      <ul class="product-list">
+        <li class="product" data-name="Horizon 40" data-price="¥8,680">
+          <button type="button" class="product-hit" aria-label="查看 Horizon 40">
+            <img
+              src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=900&q=80"
+              alt="Horizon 40 黑色表盘腕表"
+            />
+            <div class="product-meta">
+              <span class="product-name">Horizon 40</span>
+              <span class="product-price">¥8,680</span>
+            </div>
+            <p class="product-desc">哑光黑盘 · 自动机芯 · 40mm</p>
+          </button>
+        </li>
+        <li class="product" data-name="Noir 36" data-price="¥6,920">
+          <button type="button" class="product-hit" aria-label="查看 Noir 36">
+            <img
+              src="https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?auto=format&fit=crop&w=900&q=80"
+              alt="Noir 36 银色表盘腕表"
+            />
+            <div class="product-meta">
+              <span class="product-name">Noir 36</span>
+              <span class="product-price">¥6,920</span>
+            </div>
+            <p class="product-desc">银色表盘 · 石英机芯 · 36mm</p>
+          </button>
+        </li>
+        <li class="product" data-name="Field 42" data-price="¥9,480">
+          <button type="button" class="product-hit" aria-label="查看 Field 42">
+            <img
+              src="https://images.unsplash.com/photo-1622434641406-a158123450f9?auto=format&fit=crop&w=900&q=80"
+              alt="Field 42 运动风格腕表"
+            />
+            <div class="product-meta">
+              <span class="product-name">Field 42</span>
+              <span class="product-price">¥9,480</span>
+            </div>
+            <p class="product-desc">军绿表带 · 200m防水 · 42mm</p>
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>预约线下试戴</h2>
+      <p>留下联系方式，顾问将在 24 小时内与您确认门店与时间。</p>
+      <form class="contact-form" id="booking-form">
+        <label>
+          <span>姓名</span>
+          <input type="text" name="name" required placeholder="您的称呼" />
+        </label>
+        <label>
+          <span>手机</span>
+          <input type="tel" name="phone" required placeholder="11 位手机号" pattern="[0-9]{11}" />
+        </label>
+        <label>
+          <span>意向款式</span>
+          <select name="model">
+            <option value="Horizon 40">Horizon 40</option>
+            <option value="Noir 36">Noir 36</option>
+            <option value="Field 42">Field 42</option>
+            <option value="未定">尚未决定</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn-primary">提交预约</button>
+      </form>
+      <p class="form-note" id="form-note" hidden>预约已收到，我们会尽快联系您。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-brand">MERIDIAN</p>
+    <p class="footer-copy">© 2026 Meridian Watch Co. 保留所有权利</p>
+  </footer>
+
+  <dialog class="product-dialog" id="product-dialog">
+    <form method="dialog" class="dialog-panel">
+      <button type="submit" class="dialog-close" aria-label="关闭">×</button>
+      <h3 id="dialog-title"></h3>
+      <p id="dialog-price"></p>
+      <p>支持全国包邮 · 两年机芯质保 · 门店免费调校</p>
+      <a class="btn btn-primary" href="#contact">去预约试戴</a>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
